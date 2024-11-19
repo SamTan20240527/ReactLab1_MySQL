@@ -1,0 +1,20 @@
+{
+  "name": "reactlab1_mysql",
+  "version": "1.0.0",
+  "description": "This is a simple ecommerce backend developed to support the development of a frontend React app.  Do take note that the code here does not represent industry best practices and should not be treated as a \"model answer\" of sorts.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "express-validator": "^7.2.0",
+    "mysql2": "^3.11.4"
+  }
+}
