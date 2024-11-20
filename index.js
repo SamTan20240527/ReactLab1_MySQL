@@ -1,3 +1,7 @@
+// To start:
+// mysql -u root -p
+// node index.js
+
 // app.js
 const express = require('express');
 const mysql = require('mysql2/promise');
@@ -28,7 +32,7 @@ const pool = mysql.createPool({
 
 // Validation middleware
 const registerValidation = [
-  body('name').trim().isLength({ min: 2 }).escape(),
+  body('name').trim().isLength({ min: 1 }).escape(),
   body('email').isEmail().normalizeEmail(),
   body('password').isLength({ min: 4 }),
   body('confirmPassword').custom((value, { req }) => {
